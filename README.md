@@ -18,7 +18,9 @@ The main program, which can be compiled with any Fortran compiler and here provi
 ## Set up the analysis
 The input files are related to the geometry, list node, cross-section and material properties and boundary conditions:
 - **NODES_LIST.dat**: in this file, first the total number of nodes to define must be declared, and then in an ordered way one defines:
-    | NODE_ID  | X_COORD | Y_COORD |  FX  |  FY  |  MZ  |
++---------------------------------------------------+
+| NODE_ID  | X_COORD | Y_COORD |  FX  |  FY  |  MZ  |
++---------------------------------------------------+
 - **BC_LIST.dat**: in this file, first the total number of geometric boundary conditions to define must be declared, and then in an ordered way one defines:
     |  NODE_TO_APPLY_BC  |  X_DISP  | Y_DISP |  ROT_DISP |
     In this case, to prescribe a constraint, the number "0" must be used to constraint that DOF, and the number "1" to let the DOF be free
