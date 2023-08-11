@@ -25,9 +25,12 @@ The input files are related to the geometry, list node, cross-section and materi
 
 
 - **BC_LIST.dat**: in this file, first the total number of geometric boundary conditions to define must be declared, and then in an ordered way one defines:
-|  1  | 2   |  3 |  4 |
-| --- | --- |--- |--- |
+- 
+|  1                |    2   |    3   |       4    |
+| ----------------- | ------ | ------ | ---------- |
 | NODE_TO_APPLY_BC  | X_DISP | Y_DISP |  ROT_DISP  | 
+
+
     In this case, to prescribe a constraint, the number "0" must be used to constraint that DOF, and the number "1" to let the DOF be free
 - **CONNECTIVITY.dat**: in this file, first the total number of finite elements to define must be declared, and then in an ordered way one defines:
 |  1  | 2   |  3 |  4 |  5 | 6 |
