@@ -26,3 +26,8 @@ The input files are related to the geometry, list node, cross-section and materi
     In this case, to prescribe a constraint, the number "0" must be used to constraint that DOF, and the number "1" to let the DOF be free
 - **CONNECTIVITY.dat**: in this file, first the total number of finite elements to define must be declared, and then in an ordered way one defines:
     | ELE_ID  |  FIRST_NODE  |  SECOND_NODE   |    YOUNG  |  AREA  |  J_Y |
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
