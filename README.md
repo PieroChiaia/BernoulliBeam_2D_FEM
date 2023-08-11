@@ -27,7 +27,6 @@ The input files are related to the geometry, list node, cross-section and materi
 - **CONNECTIVITY.dat**: in this file, first the total number of finite elements to define must be declared, and then in an ordered way one defines:
     | ELE_ID  |  FIRST_NODE  |  SECOND_NODE   |    YOUNG  |  AREA  |  J_Y |
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+|  1  | 2   |  3 |  4 |  5 | 6 |
+| --- | --- |--- |--- |--- |--- |
+| NODE_ID  | X_COORD | Y_COORD |  FX  |  FY  |  MZ  |
