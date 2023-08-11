@@ -1,5 +1,8 @@
 # BernoulliBeam_2D_FEM
 Implementation in **Fortran90** of Finite Element Procedures for the analysis of 2D planar structures with Bernoulli beam finite elements
+![alt text](https://github.com/PieroChiaia/BernoulliBeam_2D_FEM/blob/main/Examples/DeformedStructure.png)
+
+
 
 The main program, that can be compiled with any Fortran compiler and here provided, is structured in the following way
 - **PROG_Main.f90**: contains the main program procedure and the subsequent subroutine calling
