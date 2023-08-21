@@ -1,5 +1,5 @@
-# BernoulliBeam_2D_FEM
-Implementation in **Fortran90** of Finite Element Procedures for the analysis of 2D planar structures with Bernoulli beam finite elements
+# Unified FEM 1D2D: v.1.0
+Implementation in **Fortran90** of Finite Element Procedures for the analysis of 2D planar structures. Actual numerical procedures implemented are linear static analysis of planar structures with unidirectional truss 1D finite elements and Euler-Bernoulli beam finite elements
 
 
 <img src="https://github.com/PieroChiaia/BernoulliBeam_2D_FEM/blob/main/Examples/DeformedStructure.png" width="570" height="340">
