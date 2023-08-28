@@ -1,6 +1,5 @@
 # Unified FEM 1D2D: v.1.0
-Implementation in **Fortran90** of Finite Element Procedures for the analysis of 2D planar structures. Actual numerical procedures implemented are linear static analysis of planar structures with unidirectional truss 1D finite elements and Euler-Bernoulli beam finite elements
-
+Implementation in **Fortran90** of Finite Element Procedures for the linear static analysis of 2D planar structures. Available models implemented are the unidirectional truss finite elements and Euler-Bernoulli beam finite elements.
 
 <img src="https://github.com/PieroChiaia/BernoulliBeam_2D_FEM/blob/main/Examples/DeformedStructure.png" width="570" height="340">
 
@@ -22,20 +21,24 @@ The input files are related to the geometry, list node, cross-section and materi
 |  1       |     2   |    3    |   4  |   5  |  6   |
 | -------- | ------- | ------- | ---- | ---- | ---- |
 | NODE_ID  | X_COORD | Y_COORD |  FX  |  FY  |  MZ  |
+  In the case of truss elements, the sixth column is not read since there is no rotational degree of freedom.
 
 
 - **BC_LIST.dat**: in this file, first the total number of geometric boundary conditions to define must be declared, and then in an ordered way one defines. In this case, to prescribe a constraint, the number "0" must be used to constraint that DOF, and the number "1" to let the DOF be free
 
 |  1                |    2   |    3   |       4    |
 | ----------------- | ------ | ------ | ---------- |
-| NODE_TO_APPLY_BC  | X_DISP | Y_DISP |  ROT_DISP  | 
+| NODE_TO_APPLY_BC  | X_DISP | Y_DISP |  ROT_DISP  |
+   In the case of truss elements, the fourth column is not read since there is no rotational degree of freedom.
 
 
     
-- **CONNECTIVITY.dat**: in this file, first the total number of finite elements to define must be declared, and then in an ordered way one defines:
+- **CONNECTIVITY.dat**: in this file, in the first line the total number of finite elements to define and the element type (1 for truss, 2 for Bernoulli beam) must be declared, and then in an ordered way one defines:
 
 |  1      |       2      |        3      |    4    |   5    |   6  |
 | ------- | ------------ | ------------- | ------- | ------ | ---- |
 | ELE_ID  |  FIRST_NODE  |  SECOND_NODE  |  YOUNG  |  AREA  |  J_Y |
+
+    In the case of truss elements, the sixth column is not read since there is no rotational degree of freedom.
 
 
