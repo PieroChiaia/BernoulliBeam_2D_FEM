@@ -21,6 +21,7 @@ The input files are related to the geometry, list node, cross-section and materi
 |  1       |     2   |    3    |   4  |   5  |  6   |
 | -------- | ------- | ------- | ---- | ---- | ---- |
 | NODE_ID  | X_COORD | Y_COORD |  FX  |  FY  |  MZ  |
+
   In the case of truss elements, the sixth column is not read since there is no rotational degree of freedom.
 
 
@@ -29,6 +30,7 @@ The input files are related to the geometry, list node, cross-section and materi
 |  1                |    2   |    3   |       4    |
 | ----------------- | ------ | ------ | ---------- |
 | NODE_TO_APPLY_BC  | X_DISP | Y_DISP |  ROT_DISP  |
+
    In the case of truss elements, the fourth column is not read since there is no rotational degree of freedom.
 
 
