@@ -22,7 +22,7 @@ The input files are related to the geometry, list node, cross-section and materi
 | -------- | ------- | ------- | ---- | ---- | ---- |
 | NODE_ID  | X_COORD | Y_COORD |  FX  |  FY  |  MZ  |
 
-  In the case of truss elements, the sixth column is not read since there is no rotational degree of freedom.
+    In the case of truss elements, the sixth column is not read since there is no rotational degree of freedom.
 
 
 - **BC_LIST.dat**: in this file, first the total number of geometric boundary conditions to define must be declared, and then in an ordered way one defines. In this case, to prescribe a constraint, the number "0" must be used to constraint that DOF, and the number "1" to let the DOF be free
@@ -31,7 +31,7 @@ The input files are related to the geometry, list node, cross-section and materi
 | ----------------- | ------ | ------ | ---------- |
 | NODE_TO_APPLY_BC  | X_DISP | Y_DISP |  ROT_DISP  |
 
-   In the case of truss elements, the fourth column is not read since there is no rotational degree of freedom.
+    In the case of truss elements, the fourth column is not read since there is no rotational degree of freedom.
 
 
     
