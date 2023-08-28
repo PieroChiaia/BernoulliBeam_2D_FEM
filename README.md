@@ -1,4 +1,4 @@
-# Unified FEM 1D2D: v.1.0
+# code_fem_1d: v.1.0 - 29/08/2023
 Implementation in **Fortran90** of Finite Element Procedures for the linear static analysis of 2D planar structures. Available models implemented are the unidirectional truss finite elements and Euler-Bernoulli beam finite elements.
 <p align="center">
   <img width="695" height="406" src="https://github.com/PieroChiaia/code_fem_1D/blob/main/Examples/Logo.png">
