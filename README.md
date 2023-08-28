@@ -1,13 +1,8 @@
 # Unified FEM 1D2D: v.1.0
 Implementation in **Fortran90** of Finite Element Procedures for the linear static analysis of 2D planar structures. Available models implemented are the unidirectional truss finite elements and Euler-Bernoulli beam finite elements.
 <p align="center">
-  <img width="1390" height="813" src="https://github.com/PieroChiaia/code_fem_1D/main/Examples/Logo.png">
+  <img width="695" height="406" src="https://github.com/PieroChiaia/code_fem_1D/main/Examples/Logo.png">
 </p>
-
-<p align="center">
-  <img width="460" height="300" src="https://github.com/PieroChiaia/code_fem_1D/main/Examples/Logo.png">
-</p>
-
 
 ## Main structure of the code
 The main program, which can be compiled with any Fortran compiler and here provided, is structured in the following way
