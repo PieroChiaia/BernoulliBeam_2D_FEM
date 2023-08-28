@@ -4,6 +4,11 @@ Implementation in **Fortran90** of Finite Element Procedures for the linear stat
   <img width="1390" height="813" src="https://github.com/PieroChiaia/code_fem_1D/main/Examples/Logo.png">
 </p>
 
+<p align="center">
+  <img width="460" height="300" src="https://github.com/PieroChiaia/code_fem_1D/main/Examples/Logo.png">
+</p>
+
+
 ## Main structure of the code
 The main program, which can be compiled with any Fortran compiler and here provided, is structured in the following way
 - **PROG_Main.f90**: contains the main program procedure and the subsequent subroutine calling
