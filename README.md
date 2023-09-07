@@ -5,6 +5,7 @@ Implementation in **Fortran90** of Finite Element Procedures for the linear stat
 </p>
 
 ## Main structure of the code
+
 The main program, which can be compiled with any Fortran compiler and here provided, is written in Fortran90 programming language, and contains the specific subroutines for the linear static analysis of a planar beam structure. The code is distributed in different files, including both necessary subroutines for truss elements and Euler beam elements. The main structure of the code is here described, in the Source/ folder one can find:
 - **PROG_Main.f90**: contains the main program procedure, the element type selection procedure and the subsequent subroutine calling for the computation of physical quantities and solution of the linear system of equations;
 - **MOD_Data.f90**: contains the main module _MOD_DATA_, in which the main information about the two different finite elements are defined, the global variables in both cases are declared and internal variables are initialized;
@@ -16,7 +17,9 @@ The main program, which can be compiled with any Fortran compiler and here provi
 - **POST_Postprocessor.f90**: contains subroutines _POSTPROCESSING_, both for truss and Euler beam finite elements, in which the results are printed to screen and files, by printing element by element and node by node, the displacement components obtained;
 
 ## Set up the analysis
+
 Before starting, create in the directory where the code is compiled, two new folders "INPUT" and "RESULTS". Inside the /INPUT folder the following files related to the geometry, list node, cross-section and material properties and boundary conditions have to be created:
+
 - **NODES_LIST.dat**: in this file, first the total number of nodes to define must be declared, and then in an ordered way one defines:
   
 |  1       |     2   |    3    |   4  |   5  |  6   |
