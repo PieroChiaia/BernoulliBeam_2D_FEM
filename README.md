@@ -16,7 +16,7 @@ The main program, which can be compiled with any Fortran compiler and here provi
 - **POST_Postprocessor.f90**: contains subroutines _POSTPROCESSING_, both for truss and Euler beam finite elements, in which the results are printed to screen and files, by printing element by element and node by node, the displacement components obtained;
 
 ## Set up the analysis
-The input files are related to the geometry, list node, cross-section and material properties and boundary conditions:
+Before starting, create in the directory where the code is compiled, two new folders "INPUT" and "RESULTS". Inside the /INPUT folder the following files related to the geometry, list node, cross-section and material properties and boundary conditions have to be created:
 - **NODES_LIST.dat**: in this file, first the total number of nodes to define must be declared, and then in an ordered way one defines:
   
 |  1       |     2   |    3    |   4  |   5  |  6   |
